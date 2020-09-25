@@ -7,7 +7,7 @@ import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
 
-class SplashScreenActivity : AppCompatActivity() {
+class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,22 +16,20 @@ class SplashScreenActivity : AppCompatActivity() {
         //      window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN )
         setContentView(R.layout.activity_splash_sceen)
 
+
         mudarParaActivityTela2()
+    }
+        private fun mudarParaActivityTela2() {
+            val intent = Intent(this, Tela1Activity::class.java)
+
+            Handler().postDelayed({
+                intent.change()
+            }, 2000)
+        }
+
+        fun Intent.change() {
+            startActivity(this)
+            finish()
+        }
 
     }
-
-    private fun mudarParaActivityTela2() {
-        val intent = Intent(packageContext: this, Tela2Activity::class.java)
-
-        Handler().postDelayed({
-            intent.change()
-        }, 5 * 1000)
-    }
-
-    fun Intent.change(){
-        startActivity(intent: this)
-        finish()
-    }
-
-
-}

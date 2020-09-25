@@ -5,16 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".Tela2Activity">
+    tools:context=".Tela1Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
-            android:layout_width="74dp"
-            android:layout_height="85dp"
+            android:layout_width="141dp"
+            android:layout_height="154dp"
             android:layout_gravity="center"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
@@ -33,37 +34,29 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="60dp"
-            android:textSize="40dp"
-            android:textColor="@color/colorPrimary"
+            android:text="@string/bem_vindo"
+            android:textColor="@color/colorSecondary"
             android:textFontWeight="200"
-            android:text="@string/bem_vindo" />
+            android:textSize="40dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="60dp"
-            android:textSize="20dp"
+            android:text="@string/tela1"
             android:textAlignment="center"
             android:textColor="@color/colorSecondary"
             android:textFontWeight="200"
-            android:text="@string/tela2" />
+            android:textSize="20dp" />
 
         <Button
-            android:id="@+id/buttonNext"
+            android:id="@+id/button"
             android:layout_width="138dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:text="@string/next" />
-
-        <Button
-            android:id="@+id/buttonPreview"
-            android:layout_width="138dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:text="@string/preview" />
 
     </LinearLayout>
 
