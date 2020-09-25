@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RUA RESTAURANTE DELIVERY</string>
+    <string name="tela1">Experimente a melhor comida caseira da região</string>
+    <string name="tela2">Receba no conforto do seu lar!</string>
+
+    <string name="next">Pŕoximo</string>
+    <string name="preview">Anterior</string>
+</resources>
