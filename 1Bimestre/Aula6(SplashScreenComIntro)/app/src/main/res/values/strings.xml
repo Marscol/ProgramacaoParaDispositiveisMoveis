@@ -1,0 +1,8 @@
+<resources>
+    <string name="bem_vindo">BEM VINDO!</string>
+    <string name="tela1">No iFarm você pode agendar uma visita técnica!</string>
+    <string name="tela2">Para inicar sua experência inscreva-se</string>
+
+    <string name="next">Avançar</string>
+    <string name="preview">Anterior</string>
+</resources>
