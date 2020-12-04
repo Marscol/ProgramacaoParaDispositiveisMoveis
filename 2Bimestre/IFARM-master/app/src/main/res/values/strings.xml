@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MonitoraTeste</string>
+
+    <string name="duvida">Qual a sua Dúvida?</string>
+    <string name="campo_duvida">a folha de soja está manchada</string>
+    <string name="consultar">CONSULTAR</string>
+    <string name="title_activity_localizacao">Map</string>
+</resources>
